@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron" style="background-color: #187110;">
+        <h1 style="color: white; text-align: center;">Train Schedule </h1>    
+        </div>
+
+            <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #106071;">
+                      <h3 class="panel-title" style="color: white;">Current Train Schedule</h3>
+                    </div>
+                    <div class="panel-body">
+                            <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>Train Name</th>
+                                        <th>Destination</th>
+                                        <th>Frequency (min)</th>
+                                        <th>Next Arrival</th>
+                                        <th>Minutes Away</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="display">
+                                     
+                                    </tbody>
+                                  </table>
+                    </div>
+                  </div>
+
+            <div class="panel panel-default">
+                    <div class="panel-heading" style="background-color: #106071;">
+                      <h3 class="panel-title" style="color: white;">Add Train</h3>
+                    </div>
+                    <div class="panel-body">
+                            <form role="form">
+                                    <div class="form-group">
+                                      <label for="name-input">Train Name</label>
+                                      <input class="form-control" id="name-input" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="destination-input">Destination</label>
+                                      <input class="form-control" id="destination-input" type="text">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="time-input">First Train Time (in military time)</label>
+                                      <input class="form-control" id="time-input" type="time" name="time">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="frequency-input">Frequency (min)</label>
+                                      <input class="form-control" id="frequency-input" type="number">
+                                    </div>
+                                    <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+                                  </form>
+                    </div>
+                  </div>
+
+
+
+
+
+
+    </div> 
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
